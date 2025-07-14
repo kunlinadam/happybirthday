@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>🎂 生日快乐！</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", "Arial", sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #ffe7c4);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px 0 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .cake {
+      font-size: 5rem;
+      animation: bounce 1s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    audio {
+      width: 90%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cake">🎂</div>
+  <h1>生日快乐！</h1>
+  <p>愿你拥有最甜的一天 🎉</p>
+
+  <audio autoplay loop controls>
+    <source src="birthday.mp3" type="audio/mpeg">
+    您的浏览器不支持 audio 标签。
+  </audio>
+</body>
+</html>
